@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+/*
+ * Sistema cromatico DESAINS (Paleta B: marino, azul acero y oro).
+ * Editar aqui cambia la interfaz y tambien la escena 3D, que lee estas variables.
+ * Contraste medido sobre --color-canvas: texto 16.1:1, secundario 9.1:1, acento 8.1:1.
+ */
+@theme static {
+  --color-canvas: #0a0f17;
+  --color-canvas-deep: #070b11;
+  --color-surface: #121a26;
+  --color-surface-2: #182233;
+  --color-hover: #1b2636;
+  --color-line: #243044;
+  --color-line-strong: #5a6880;
+
+  --color-fg: #efebe3;
+  --color-fg-2: #a9b3c1;
+  --color-fg-3: #8a94a3;
+
+  --color-steel: #8db3da;
+  --color-navy: #1b3a5c;
+  --color-gold: #c9a35b;
+  --color-gold-hover: #d8b676;
+  --color-on-gold: #0a0f17;
+  --color-focus: #e2c27f;
+
+  --color-3d-architecture: #d9d4ca;
+  --color-3d-glass: #6f8ba8;
+  --color-3d-structure: #7fa6d4;
+  --color-3d-concrete: #8c949e;
+  --color-3d-bim: #c9a35b;
+
+  --font-sans: var(--font-archivo), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+
+  --radius-xs: 2px;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    background: var(--color-canvas);
+    -webkit-text-size-adjust: 100%;
+    /* La cabecera fija no tapa anclas ni elementos enfocados. */
+    scroll-padding-top: 5.5rem;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  a,
+  button,
+  select,
+  label,
+  input,
+  textarea {
+    touch-action: manipulation;
+  }
+
+  body {
+    background: var(--color-canvas);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-on-gold);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    letter-spacing: -0.015em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .font-expanded {
+    font-stretch: 125%;
+  }
+
+  .font-semi-expanded {
+    font-stretch: 112.5%;
+  }
+
+  .container-site {
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .container-site {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Durante el inicio del hero 3D la interfaz aparece progresivamente; el foco la muestra siempre. */
+html[data-hero-ui="hidden"] .site-header:not(:focus-within) {
+  opacity: 0;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+html[data-hero-ui="hidden"] .whatsapp-float:not(:focus-visible) {
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+}
+
+/* Revelado al hacer scroll: solo se oculta si JS y animaciones estan activos. */
+html[data-motion="on"] [data-reveal]:not([data-revealed]) {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Marquesina de clientes: la unica del sitio. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 90s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
