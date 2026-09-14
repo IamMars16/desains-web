@@ -699,6 +699,11 @@ export const siteImages: Record<string, ImageAsset> = {
     "width": 274,
     "height": 338
   },
+  "team/erick-paredes": {
+    "src": "/images/team/erick-paredes.webp",
+    "width": 1022,
+    "height": 1600
+  },
   "innovacion/sofips-signal": {
     "src": "/images/innovacion/sofips-signal.webp",
     "width": 1299,

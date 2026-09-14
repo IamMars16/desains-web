@@ -65,6 +65,16 @@ export const professionals: Professional[] = [
       "Ingeniero civil, maestro en Ciencias con mención en Ingeniería Estructural y doctorado en Ingeniería por la Pontificia Universidad Católica del Perú.",
     photo: { ...siteImages["team/javier-taipe"], alt: "Javier Francisco Taipe Carbajal" },
   },
+  {
+    slug: "erick-paredes",
+    name: "Erick Martin Paredes Bravo",
+    role: "Modelamiento BIM y Desarrollo Digital",
+    specialty: "Modelamiento BIM, automatización y desarrollo digital",
+    education: ["Estudiante de Ingeniería Civil, Universidad Nacional de Cajamarca"],
+    summary:
+      "Estudiante de Ingeniería Civil en la Universidad Nacional de Cajamarca. Su trabajo se enfoca en el modelamiento BIM, la automatización de procesos y el desarrollo de herramientas digitales aplicadas a proyectos de ingeniería civil. Ha trabajado en soluciones para Revit, automatización de verificaciones técnicas y optimización del intercambio de información entre diferentes plataformas de ingeniería. En DESAINS participa en el modelamiento, desarrollo digital y mejora de flujos de trabajo.",
+    photo: { ...siteImages["team/erick-paredes"], alt: "Erick Martin Paredes Bravo" },
+  },
 ];
 
 export function getProfessional(slug: string) {
