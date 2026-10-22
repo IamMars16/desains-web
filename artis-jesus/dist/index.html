@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf7">
+  <meta name="description" content="Regalos y productos personalizados de Artis Jesús en Cajamarca. Diseña, cotiza y sigue tu pedido con Venus.">
+  <title>Artis Jesús · Detalles hechos para ti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/config.js"></script>
+  <script type="module" src="./assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="announcement">
+    <span><i></i> Pedidos personalizados en Jesús, Cajamarca</span>
+    <button class="text-button" data-open-chat>Venus está disponible <span aria-hidden="true">↗</span></button>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Artis Jesús, inicio">
+      <span class="brand-mark">AJ</span>
+      <span class="brand-copy"><b>Artis Jesús</b><small>detalles personalizados</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#seguimiento">Mis pedidos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-trigger" aria-label="Buscar productos" data-focus-catalog>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+      </button>
+      <button class="button button-dark" data-open-builder>Personalizar <span aria-hidden="true">↗</span></button>
+      <button class="menu-button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#catalogo">Catálogo</a><a href="#como-funciona">Cómo funciona</a><a href="#seguimiento">Mis pedidos</a><a href="#contacto">Contacto</a>
+    <button class="button button-primary" data-open-builder>Crear mi pedido</button>
+  </div>
+
+  <main id="contenido">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">REGALOS QUE CUENTAN TU HISTORIA</span>
+        <h1 id="hero-title">Tu idea merece<br><em>volverse detalle.</em></h1>
+        <p>Personalizamos tazas, termos, cuadros, stickers y más. Tú imaginas el momento; nosotros cuidamos cada paso hasta la entrega.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" data-open-builder>Quiero personalizar <span aria-hidden="true">→</span></button>
+          <button class="button button-ghost" data-open-chat><span class="spark">✦</span> Preguntarle a Venus</button>
+        </div>
+        <div class="hero-proof" aria-label="Beneficios">
+          <div><strong>01</strong><span>Vista previa<br>antes de producir</span></div>
+          <div><strong>02</strong><span>Seguimiento<br>sin perder detalles</span></div>
+          <div><strong>03</strong><span>Atención local<br>en Cajamarca</span></div>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal" aria-label="Colección de productos personalizados">
+        <div class="hero-halo halo-one"></div><div class="hero-halo halo-two"></div>
+        <article class="showpiece showpiece-main">
+          <div class="paper-tag">HECHO PARA TI</div>
+          <div class="mug-art" aria-hidden="true"><span class="mug-body"><i>tu<br>momento</i></span><span class="mug-handle"></span></div>
+          <div class="showpiece-caption"><span>Taza personalizada</span><b>01</b></div>
+        </article>
+        <article class="showpiece showpiece-small top-card">
+          <div class="bottle-art" aria-hidden="true"><span></span><i>AJ</i></div>
+          <div><b>Para cada día</b><small>Tomatodos y termos</small></div>
+        </article>
+        <article class="showpiece showpiece-small bottom-card">
+          <div class="sticker-art" aria-hidden="true"><span>♥</span><span>✦</span><span>☺</span></div>
+          <div><b>Pequeños detalles</b><small>Stickers y llaveros</small></div>
+        </article>
+        <div class="hand-note">hecho con cariño <span>↗</span></div>
+      </div>
+    </section>
+
+    <section class="promise-bar" aria-label="Condiciones principales">
+      <div><span class="promise-icon">✓</span><p><b>Diseño confirmado</b><small>Producción después de tu aprobación</small></p></div>
+      <div><span class="promise-icon">½</span><p><b>50 % para comenzar</b><small>Con excepciones claras para stickers</small></p></div>
+      <div><span class="promise-icon">↗</span><p><b>Entrega coordinada</b><small>Recojo, delivery o agencia</small></p></div>
+    </section>
+
+    <section class="catalog section-shell" id="catalogo" aria-labelledby="catalog-title">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">ENCUENTRA TU DETALLE</span><h2 id="catalog-title">Una idea para cada ocasión.</h2></div>
+        <p>Elige una base y hazla tuya con nombres, fechas, colores, frases o imágenes.</p>
+      </div>
+      <div class="catalog-toolbar reveal">
+        <div class="category-tabs" role="tablist" aria-label="Filtrar catálogo">
+          <button class="active" role="tab" aria-selected="true" data-category="Todos">Todos</button>
+          <button role="tab" aria-selected="false" data-category="Regalos">Regalos</button>
+          <button role="tab" aria-selected="false" data-category="Día a día">Día a día</button>
+          <button role="tab" aria-selected="false" data-category="Recuerdos">Recuerdos</button>
+          <button role="tab" aria-selected="false" data-category="Detalles">Detalles</button>
+        </div>
+        <label class="catalog-search"><span class="sr-only">Buscar producto</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input id="catalog-search" type="search" placeholder="Buscar producto"></label>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="catalog-note">Los importes mostrados son referenciales para el prototipo. Artis Jesús confirma precio, disponibilidad y fecha antes de solicitar cualquier pago.</p>
+    </section>
+
+    <section class="story-section" id="como-funciona" aria-labelledby="story-title">
+      <div class="story-intro section-shell reveal">
+        <span class="eyebrow light">DE LA IDEA A TUS MANOS</span>
+        <h2 id="story-title">Simple para ti.<br><em>Claro en cada paso.</em></h2>
+        <p>El pedido conserva tus acuerdos, archivos y versiones para que siempre se produzca el diseño correcto.</p>
+      </div>
+      <div class="story-steps section-shell">
+        <article class="step-card reveal"><span class="step-number">01</span><div class="step-visual idea-visual" aria-hidden="true"><i></i><i></i><i></i><b>✦</b></div><h3>Cuéntanos tu idea</h3><p>Indica producto, cantidad, texto, colores, fecha y forma de entrega. Puedes adjuntar una referencia.</p></article>
+        <article class="step-card reveal"><span class="step-number">02</span><div class="step-visual preview-visual" aria-hidden="true"><div><span>v1</span><b>Tu diseño</b><i>Vista previa</i></div><em>✓</em></div><h3>Revisa y aprueba</h3><p>Recibes una propuesta identificada por versión. Solo la versión aprobada pasa a producción.</p></article>
+        <article class="step-card reveal"><span class="step-number">03</span><div class="step-visual hands-visual" aria-hidden="true"><span>AJ</span><i></i></div><h3>Recíbelo como acordamos</h3><p>Coordinamos el saldo y la entrega. El pedido conserva su historial hasta el cierre.</p></article>
+      </div>
+    </section>
+
+    <section class="venus-section section-shell" aria-labelledby="venus-title">
+      <div class="venus-visual reveal">
+        <div class="venus-orbit orbit-a"></div><div class="venus-orbit orbit-b"></div>
+        <div class="venus-glow"></div>
+        <img src="./assets/venus.webp" alt="Venus, asistente virtual de Artis Jesús" width="560" height="560">
+        <span class="signal signal-one">CATÁLOGO <b>✓</b></span>
+        <span class="signal signal-two">PEDIDO <b>✓</b></span>
+        <span class="signal signal-three">ESTADO <b>✓</b></span>
+      </div>
+      <div class="venus-copy reveal">
+        <span class="eyebrow cyan">CONOCE A VENUS</span>
+        <h2 id="venus-title">Una guía inteligente,<br><em>siempre cercana.</em></h2>
+        <p>Venus reconoce qué necesitas y te acompaña para reunir un pedido completo. Puede mostrar el catálogo, calcular el adelanto aplicable, registrar tu solicitud y orientarte sobre la entrega.</p>
+        <ul class="feature-list">
+          <li><span>✦</span><div><b>Red neuronal integrada</b><small>Clasifica consultas de catálogo, pedidos, pagos, entregas y seguimiento.</small></div></li>
+          <li><span>◎</span><div><b>Reglas claras</b><small>No inventa precios ni confirma dinero: esos controles siguen en manos del negocio.</small></div></li>
+          <li><span>↗</span><div><b>Atención humana disponible</b><small>Puedes pedir al encargado en cualquier momento.</small></div></li>
+        </ul>
+        <button class="button button-cyan" data-open-chat>Conversar con Venus <span aria-hidden="true">→</span></button>
+      </div>
+    </section>
+
+    <section class="tracking section-shell" id="seguimiento" aria-labelledby="tracking-title">
+      <div class="tracking-card reveal">
+        <div class="tracking-copy"><span class="eyebrow">TU PEDIDO, A LA VISTA</span><h2 id="tracking-title">¿En qué etapa está?</h2><p>Escribe el código recibido al registrar el pedido. Para probar la experiencia usa <button class="inline-code" data-demo-code>AJ-2401</button>.</p></div>
+        <form id="tracking-form" class="tracking-form">
+          <label for="tracking-code">Código del pedido</label>
+          <div><input id="tracking-code" name="code" autocomplete="off" placeholder="Ej. AJ-2401" required><button class="button button-primary" type="submit">Consultar</button></div>
+          <p id="tracking-error" class="form-message" role="alert"></p>
+        </form>
+      </div>
+      <div class="tracking-result" id="tracking-result" hidden></div>
+    </section>
+
+    <section class="contact section-shell" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <div><span class="eyebrow light">HABLEMOS DE TU IDEA</span><h2 id="contact-title">Tu próximo detalle<br>puede empezar hoy.</h2><p>Venus te ayuda a ordenar la idea y el equipo de Artis Jesús confirma los detalles finales.</p></div>
+        <div class="contact-actions"><button class="button button-light" data-open-builder>Preparar mi pedido <span>→</span></button><button class="button button-outline-light" data-whatsapp>Continuar por WhatsApp</button></div>
+        <div class="contact-badge"><b>AJ</b><span>Hecho con cariño<br>en Cajamarca</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-brand"><span class="brand-mark">AJ</span><div><b>Artis Jesús</b><p>Detalles personalizados para momentos que sí importan.</p></div></div>
+    <div><b>Explora</b><a href="#catalogo">Catálogo</a><a href="#como-funciona">Cómo funciona</a><a href="#seguimiento">Mis pedidos</a></div>
+    <div><b>Atención</b><a href="#contacto">Contacto</a><button data-open-chat>Hablar con Venus</button><button id="open-admin">Vista de gestión</button></div>
+    <div class="footer-meta"><span>Jesús, Cajamarca · Perú</span><span>© <span id="year"></span> Artis Jesús</span><small>Prototipo funcional · Datos guardados en este navegador</small></div>
+  </footer>
+
+  <button class="venus-launcher" data-open-chat aria-label="Abrir chat con Venus">
+    <span class="launcher-image"><img src="./assets/venus.webp" alt="" width="72" height="72"></span>
+    <span class="launcher-copy"><small>Asistente en línea</small><b>Pregunta a Venus</b></span>
+    <i aria-hidden="true">↗</i>
+  </button>
+
+  <aside class="chat-drawer" id="chat-drawer" aria-labelledby="chat-title" aria-hidden="true">
+    <header class="chat-header">
+      <div class="chat-identity"><span class="venus-avatar"><img src="./assets/venus.webp" alt="" width="60" height="60"></span><div><small><i></i> ASISTENTE ACTIVA</small><h2 id="chat-title">Venus</h2><p>Inteligencia de Artis Jesús</p></div></div>
+      <button class="icon-button close-chat" aria-label="Cerrar chat">×</button>
+    </header>
+    <div class="neural-status" title="La red neuronal clasifica la intención; las reglas del negocio calculan precios y estados."><span>✦</span><p><b>Red neuronal lista</b><small id="neural-label">Cargando modelo de intenciones…</small></p><button id="neural-info" aria-label="Ver información de la red">i</button></div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+    <div class="chat-suggestions" id="chat-suggestions"><button data-prompt="Muéstrame el catálogo">Ver catálogo</button><button data-prompt="Quiero hacer un pedido">Hacer un pedido</button><button data-prompt="¿Cómo va mi pedido?">Consultar estado</button></div>
+    <div class="file-preview" id="file-preview" hidden></div>
+    <form class="chat-form" id="chat-form">
+      <label class="attach-button" aria-label="Adjuntar referencia"><input id="chat-file" type="file" accept="image/png,image/jpeg,application/pdf" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8.5 12.5 5.7-5.7a3 3 0 1 1 4.2 4.2l-7.8 7.8a5 5 0 0 1-7.1-7.1l7.1-7.1"></path></svg></label>
+      <label><span class="sr-only">Mensaje para Venus</span><textarea id="chat-input" rows="1" placeholder="Escribe tu consulta…" maxlength="700"></textarea></label>
+      <button type="submit" class="send-button" aria-label="Enviar mensaje">↑</button>
+    </form>
+    <p class="chat-note">Venus puede equivocarse al interpretar texto. El equipo confirma cotizaciones, pagos y fechas.</p>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+
+  <dialog class="builder-dialog" id="builder-dialog">
+    <form method="dialog" class="builder-shell" id="builder-form">
+      <header class="builder-header"><a class="brand" href="#inicio" tabindex="-1"><span class="brand-mark">AJ</span><span class="brand-copy"><b>Artis Jesús</b><small>crea tu pedido</small></span></a><div class="builder-progress" aria-label="Progreso"><span class="active" data-progress="1">1</span><i></i><span data-progress="2">2</span><i></i><span data-progress="3">3</span></div><button type="button" class="icon-button close-builder" aria-label="Cerrar">×</button></header>
+      <div class="builder-body">
+        <section class="builder-step active" data-step="1"><span class="eyebrow">PASO 1 DE 3</span><h2>¿Qué vamos a personalizar?</h2><p>Elige un producto y la cantidad. Podrás revisar todo antes de enviar.</p><div class="builder-products" id="builder-products"></div><label class="field compact"><span>Cantidad</span><input id="builder-quantity" name="quantity" type="number" min="1" max="500" value="1" required><small id="quantity-help">Indica cuántas unidades necesitas.</small></label></section>
+        <section class="builder-step" data-step="2"><span class="eyebrow">PASO 2 DE 3</span><h2>Cuéntanos cómo lo imaginas.</h2><p>Escribe todo lo que no debe perderse en el diseño.</p><label class="field"><span>Personalización</span><textarea id="builder-specs" name="specs" rows="5" placeholder="Nombre o frase, colores, estilo, ubicación de elementos…" required maxlength="700"></textarea><small>Entre más claro, mejor será el primer diseño.</small></label><div class="field-grid"><label class="field"><span>Fecha solicitada</span><input id="builder-date" name="date" type="date" required><small id="date-help"></small></label><label class="field"><span>Forma de entrega</span><select id="builder-delivery" name="delivery" required><option value="pickup">Recojo coordinado</option><option value="delivery">Delivery local</option><option value="agency">Envío por agencia</option></select><small>Delivery y agencia requieren cotización manual.</small></label></div><label class="upload-field"><input id="builder-file" type="file" accept="image/png,image/jpeg,application/pdf" hidden><span>＋</span><b>Adjuntar una referencia</b><small>PNG, JPG o PDF · máximo 4 MB en esta demostración</small></label></section>
+        <section class="builder-step" data-step="3"><span class="eyebrow">PASO 3 DE 3</span><h2>Revisa tu solicitud.</h2><p>Venus reunirá los datos y el equipo confirmará disponibilidad y fecha.</p><div class="field-grid"><label class="field"><span>Nombre</span><input id="builder-name" name="name" autocomplete="name" required maxlength="80" placeholder="Tu nombre"></label><label class="field"><span>WhatsApp</span><input id="builder-phone" name="phone" inputmode="tel" autocomplete="tel" required maxlength="20" placeholder="9XX XXX XXX"></label></div><div class="order-summary" id="order-summary"></div><label class="check-field"><input id="builder-agree" type="checkbox" required><span>Confirmo que los datos son correctos y entiendo que el precio final, la disponibilidad y el pago serán confirmados por Artis Jesús.</span></label></section>
+      </div>
+      <footer class="builder-footer"><button type="button" class="button button-ghost" id="builder-back" hidden>Volver</button><span id="builder-step-label">Producto</span><button type="button" class="button button-primary" id="builder-next">Continuar <span>→</span></button><button type="submit" class="button button-primary" id="builder-submit" hidden>Enviar solicitud <span>→</span></button></footer>
+    </form>
+  </dialog>
+
+  <section class="admin-view" id="admin-view" aria-hidden="true" hidden>
+    <aside class="admin-sidebar"><a class="brand" href="#"><span class="brand-mark">AJ</span><span class="brand-copy"><b>Artis Jesús</b><small>gestión de pedidos</small></span></a><nav><button class="active"><span>▦</span> Pedidos</button><button><span>◉</span> Conversaciones</button><button><span>♢</span> Diseños</button><button><span>⌁</span> Reportes</button></nav><div class="admin-venus"><img src="./assets/venus.webp" alt="Venus" width="90" height="90"><p><i></i><b>Venus activa</b><small>La bandeja está al día.</small></p></div><button class="exit-admin" id="exit-admin">← Volver al sitio</button></aside>
+    <main class="admin-main"><header><div><span class="eyebrow">CENTRO DE ATENCIÓN</span><h1>Buenos días, Karen.</h1><p>Aquí está lo que necesita tu atención hoy.</p></div><div class="admin-user"><span>KP</span><p><b>Propietaria</b><small>Administración</small></p></div></header><div class="admin-notice"><span>✦</span><p><b>Venus reunió una nueva solicitud.</b> Revisa precio, disponibilidad y condiciones antes de solicitar el pago.</p><button id="view-newest">Revisar pedido →</button></div><section class="admin-stats" id="admin-stats"></section><section class="admin-work"><div class="admin-heading"><div><h2>Mesa de trabajo</h2><p>Mueve cada pedido solo cuando sus controles estén completos.</p></div><label><span class="sr-only">Buscar pedido</span><input id="admin-search" type="search" placeholder="Buscar pedido o cliente"></label></div><div class="kanban" id="kanban"></div></section></main>
+  </section>
+
+  <dialog class="order-dialog" id="order-dialog"><div id="order-detail"></div></dialog>
+  <dialog class="info-dialog" id="info-dialog"><button class="icon-button close-info" aria-label="Cerrar">×</button><span class="eyebrow cyan">CÓMO PIENSA VENUS</span><h2>La inteligencia interpreta; las reglas deciden.</h2><p>Una red MLP de bolsa de palabras y 20 neuronas ocultas clasifica la intención del mensaje. El sistema mantiene fuera de la red los precios, adelantos, pagos y transiciones del pedido para evitar decisiones impredecibles.</p><div class="model-diagram"><span>Mensaje</span><i>→</i><span>Palabras</span><i>→</i><b>20<br><small>neuronas</small></b><i>→</i><span>Intención</span></div><small id="model-meta"></small></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

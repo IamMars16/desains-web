@@ -1,0 +1,14 @@
+{
+  "name": "artis-jesus-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/assets/app.js && node --check dist/assets/neural.js && node --check dist/assets/business.js",
+    "start": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
